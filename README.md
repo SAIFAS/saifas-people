@@ -2,7 +2,10 @@
 
 ## Tech. description
 SAIFAS team website
+
+Repository name: saifas-team-website
  
+Reposytory hosting name: SAIFAS.github.io
 
 ## Specifications:
 
