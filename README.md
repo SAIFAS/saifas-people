@@ -1,21 +1,23 @@
-# SAIFAS team website
+### SAIFAS People
 
-## Tech. description
-SAIFAS team website
 
-Repository name: saifas-team-website
+#### About:
+
+Tech. description `SAIFAS People website`
+
+Repository name `saifas-people-website`
  
-Reposytory hosting name: https://saifas.github.io/
+Reposytory hosting name: `https://saifas.github.io/saifas-people-website`
 
-## Specifications:
+#### Specifications:
 
 - HTML5
 - CSS3
 - Bootstrap v2.3.2
 
-## Instuctions:
+#### Instuctions:
 
-### Add new teammate:
+#####  Add new teammate:
 1) Duplicate any block <div class="span4 animated pulse" id="person-#">
 2) Replace descriptions and path to image
 3) To evenly distribute teammates along the line <div class="row-fluid team centered"> use the bootstrap classes span2 (6 cards in row), span3 (4 in row) or span4 (3 in row)
