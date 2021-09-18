@@ -1,0 +1,67 @@
+ /* SAIFAS LLC*/
+ 
+/*!
+#
+#
+# Copyright 2007-2021 by SAIFAS LLC. All rights reserved.
+# https://saifas.org
+#
+#file .desktop template version: 0.1.2
+#
+#Designed and built with all the love in the world by @
+*/ 
+ 
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  background: var(--surface);
+}
+.thumbnail > h2 {
+  position: relative;
+  z-index: 4;
+}
+.thumbnail > h3,
+.thumbnail > p {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 4;
+}
+.thumbnail > h3 {
+  font-size: 20px;
+  color: var(--primary);
+  margin-top: 10px;
+}
+.thumbnail > h3:last-of-type {
+  margin-top: auto;
+}
+.thumbnail > p {
+  padding-bottom: 20px;
+}
+.thumbnail > .mask {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  position: absolute;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2 s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.thumbnail:hover > .mask {
+  top: 0;
+}

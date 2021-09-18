@@ -1,0 +1,131 @@
+ /* SAIFAS LLC*/
+ 
+/*!
+#
+#
+# Copyright 2007-2021 by SAIFAS LLC. All rights reserved.
+# https://saifas.org
+#
+#file .desktop template version: 0.1.2
+#
+#Designed and built with all the love in the world by @
+*/ 
+
+.navbar {
+  background: var(--header);
+  margin-bottom: 0;
+  min-height: 70px;
+}
+
+.navbar-fixed-top {
+  min-height: 60px;
+  height: 60px;
+  padding-top: 0;
+}
+.navbar-inner {
+  background: var(--header);
+  border-radius: 0;
+  filter: none;
+  border: none;
+  box-shadow: none;
+}
+.navbar > .navbar-inner > .container > .brand {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 0px;
+  padding-top: 13px !important;
+  padding: 0;
+}
+
+/* .navbar > .navbar-inner > .container > .brand > h2, */
+.navbar > .navbar-inner > .container > .brand > h3 {
+  letter-spacing: 0.1em;
+}
+
+.navbar > .navbar-inner > .container > .brand > h3 {
+  /* font-family: sans-serif; */
+  font-size: 30px;
+}
+
+/* .navbar > .navbar-inner > .container > .brand > h2,
+.navbar > .navbar-inner > .container > .brand > h4,
+.navbar > .navbar-inner > .container > .brand > h5,
+.navbar > .navbar-inner > .container > .brand > h6 {
+  font-family: 'Cleargothic', sans-serif;
+  margin: 0;
+  line-height: 20px;
+  color: var(--on-header);
+  letter-spacing: 0.02em;
+} */
+
+.navbar > .navbar-inner > .container > .brand > img {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  margin-right: 4px;
+}
+.navbar > .navbar-inner > .container > .brand > .brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.navbar > .navbar-inner > .container > .brand > .brand-text > h3 {
+  margin: 0;
+}
+
+/* .navbar > .nav > li > a {
+  text-transform: uppercase;
+  line-height: auto;
+  vertical-align: middle;
+  margin: 10px 3px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid var(--header);
+  box-shadow: none;
+  font-size: 15px;
+  text-shadow: none;
+  color: var(--on-header);
+  transition: border-color 1s ease;
+}
+.navbar .nav > li:hover > a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+  border: 1px solid var(--primary);
+  color: var(--on-header);
+  background-color: var(--primary);
+  transition: border-color 1s ease;
+} */
+
+@media (max-width: 979px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    position: fixed;
+  }
+  .navbar .nav > li > a {
+    line-height: 20px;
+    vertical-align: middle;
+  }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .nav-collapse {
+    clear: both;
+  }
+  .nav-collapse > .nav {
+    float: none;
+    margin: 0 0 10px;
+  }
+  .nav-collapse > .nav > li {
+    float: none;
+  }
+  .nav-collapse,
+  .nav-collapse.collapse {
+    width: 100%;
+    display: inherit;
+  }
+}

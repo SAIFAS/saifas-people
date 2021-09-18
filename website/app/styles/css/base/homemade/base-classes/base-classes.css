@@ -1,0 +1,189 @@
+.button,
+.button:visited,
+.button:focus {
+  display: inline-block;
+  color: var(--on-primary);
+  background-color: #52cfde;
+  padding: 15px 30px;
+  line-height: auto;
+  border-radius: 8px;
+  font-size: 17px;
+}
+.button:hover,
+.button:active{
+  background-color: var(--background);
+  color:white;
+}
+
+.button-sp,
+.button-sp:visited,
+.button-sp:focus {
+  border: none;
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+.button-sp:hover,
+.button-sp:active {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+.button-ps,
+.button-ps:visited,
+.button-ps:focus {
+  border: none;
+  background-color: var(--background);
+  color: var(--primary);
+}
+.button-ps:hover,
+.button-ps:active {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.section {
+  padding-bottom: 60px;
+}
+.section > .container {
+  /* padding-top: 50px; */
+}
+.section > .container > .title {
+  text-align: center;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+}
+.section > .container > .title > h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.section > .container > .title > p {
+  font-weight: lighter;
+  font-size: 20px;
+  color: white;
+  line-height: 28px;
+}
+
+.primary-section {
+  background: var(--background);
+}
+.primary-section > .triangle {
+  border-top: 40px solid var(--primary);
+}
+.primary-section > .title {
+  border-bottom: 1px solid white;
+}
+.primary-section > .title > h1 {
+  color: white;
+}
+.primary-section,
+.primary-section .title p,
+.primary-section h3 {
+  color: var(--on-background);
+}
+
+.secondary-section {
+  background: var(--primary-gradient);
+}
+.secondary-section > .title {
+  border-bottom: 1px solid var(--background);
+}
+.secondary-section > h1,
+.secondary-section > .title > p {
+  color: var(--on-primary);
+}
+
+/* Third section use background image */
+.third-section {
+  padding-bottom: 70px;
+  background: var(--background) url(../images/brand-bg.png) no-repeat center;
+  border-top: 6px solid var(--primary);
+}
+.third-section > .container {
+  padding-top: 20px;
+  position: relative;
+}
+.third-section > .title {
+  border-bottom: 1px solid #A1AAB7;
+  color: var(--primary);
+}
+
+.sub-section {
+  margin-top: 30px;
+}
+.sub-section > .title {
+  padding: 0;
+}
+
+.about-text {
+  margin-top: 30px;
+}
+.about-text > p {
+  padding: 0;
+  font-size: 16px;
+}
+
+.section-buttons__block > .section-buttons__title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.section-buttons {
+  display: grid; /*flex or grid*/
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /*Change on 'row' or "column"*/
+}
+
+.section-buttons > .section-buttons__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; *//*disable if display: grid;*/
+  border: 1px solid var(--contact-icon);
+  text-align: center;
+  height: 40px;
+  border-radius: 10px;
+  background: transparent;
+  padding: 10px;
+  color: var(--contact-icon);
+  transition: .3s;
+  margin: 10px; /*Delete this row and insert this "margin-bottom: 30px;" "margin: 10px"*/
+}
+
+.section-buttons > .section-buttons__btn:hover {
+  background-color: var(--contact-icon);
+  color: var(--background);
+  transition: .3s;
+}
+
+.section-buttons > .disabled {
+  opacity: .3;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+@media (max-width: 979px) {
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .section-buttons {
+    display: flex;
+    flex-direction: column; /*Change on 'row' or "column"*/
+  }
+  .section-buttons > .section-buttons__btn {
+    width: 100%;
+  }
+}

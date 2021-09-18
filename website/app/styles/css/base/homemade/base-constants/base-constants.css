@@ -1,0 +1,35 @@
+:root {
+  --background: #7d8996;
+  --on-background: white;
+  --on-background-border: #181A1C;
+
+  --header: #95a3b3;
+  --on-header: white;
+  --on-header-border: #181A1C;
+
+  --surface: #95a3b3;
+  --on-surface: white;
+
+  --primary: #fdc501;
+  --primary-accent: #181A1C;
+
+  --primary-variant-1: #f7ebc0;
+  --primary-variant-2: black;
+
+  --on-primary: #181A1C;
+  --on-primary-border: #181A1C;
+  --on-primary-accent: white;
+
+  --secondary: #7d8996;
+  --secondary-variant-1: #C5CED9;
+  --on-secondary: #181A1C;
+
+  --contact-icon: white;
+  --contact-icon-accent: #181A1C;
+  --social-icon: white;
+  --social-icon-accent: #fdc501;
+
+  --primary-gradient: linear-gradient(0deg, var(--primary) 0%, var(--primary-variant-1) 100%);
+
+  --error: #CF0000;
+}

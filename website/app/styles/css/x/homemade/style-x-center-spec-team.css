@@ -1,0 +1,76 @@
+.section > .container > .team {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.section > .container > .team > .span2,
+.section > .container > .team > .span3,
+.section > .container > .team > .span4 {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+
+.section > .container > .team > .span2,
+.section > .container > .team > .span3 {
+  max-width: 23%;
+}
+
+.section > .container > .team > .span2 > .thumbnail > .mask > h2 {
+  margin-top: 40%;
+}
+
+.section > .container > .team > .span3 > .thumbnail > .mask > h2 {
+  margin-top: 60%;
+}
+
+/* .section > .container > .team > .span3 > .thumbnail > .mask > h2 {
+  font-size: 24;
+} */
+
+.section > .container > .team > .thumbnail {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px;
+}
+
+.section > .container > .team > .thumbnail:hover > .social {
+  z-index: 5;
+}
+
+.section > .container > .team > .thumbnail:hover > .social > a {
+  color: #fff;
+}
+
+.section > .container > .team > .thumbnail > .mask {
+  background: var(--primary);
+}
+
+.section > .container > .team > .thumbnail > .mask > h2 {
+  margin-top: 60%;
+}
+
+.section > .container > .team > .thumbnail:hover > h2,
+.section > .container > .team > .thumbnail:hover > h3,
+.section > .container > .team > .thumbnail:hover > .social > a:hover,
+.section > .container > .team > .thumbnail .mask,
+.section > .container > .team > .thumbnail .mask > h2,
+.section > .container > .team > .thumbnail .mask > h3,
+.section > .container > .team > .thumbnail .mask > p {
+    color: #181A17;
+}
+
+.section > .container > .team > .thumbnail > .mask > img {
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .section > .container > .team > .span2,
+  .section > .container > .team > .span3 {
+    max-width: 100%;
+  }
+}
